@@ -12,35 +12,18 @@ import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 
 import Dashboard from "./Screens/Dashboard";
-
-import {
-  StyleSheet
-} from 'react-native';
-
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import Login from "./Screens/Login"
 
 const AppNavigator = createStackNavigator({
   Dashboard: {
     screen: Dashboard
+  },
+  Login: {
+    screen: Login
   }
 });
 
 const AppContainer = createAppContainer(AppNavigator);
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
 
 export default class App extends React.Component {
   render() {
