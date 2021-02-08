@@ -13,6 +13,7 @@ import {createStackNavigator} from 'react-navigation-stack';
 
 import Dashboard from "./Screens/Dashboard";
 import Login from "./Screens/Login"
+import Home from "./Screens/Homescreen"
 
 const AppNavigator = createStackNavigator({
   Dashboard: {
@@ -20,6 +21,9 @@ const AppNavigator = createStackNavigator({
   },
   Login: {
     screen: Login
+  },
+  Home: {
+    screen: Home
   }
 });
 

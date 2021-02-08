@@ -33,7 +33,7 @@ export default class Login extends Component {
                 alert("Password length should be greater than or equal to 6");
                 return
             }
-            alert("User will be redirected to Home screen")
+            this.props.navigation.navigate('Home', {email: userEmail, password: userPassword})
         }
         return (
             <View style={style = styles.superView}>
