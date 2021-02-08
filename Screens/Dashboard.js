@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import { Button, View, Text, StyleSheet} from 'react-native';
-import { createStackNavigator, createAppContainer } from 'react-navigation';
 
 export default class Dashboard extends Component {
   render() {
     return(
       <View style = {styles.superView}>
-        <Text style = {{fontSize: 40, alignItems: 'center', justifyContent: "center", color: "#000000"}}>
+        <Text style = {}>
           Dashboard Screen</Text>
         <Button title = "Go to Home Screen" style = {styles.listBtnStyle}
           onPress = {() => this.props.navigation.navigate('Home')}/>
@@ -38,5 +37,11 @@ const styles = StyleSheet.create({
     flex: 1, 
     alignItems: 'center', 
     justifyContent: 'center'
+  },
+  txtScreen: {
+    fontSize: 40, 
+    alignItems: 'center', 
+    justifyContent: "center", 
+    color: "#000000"
   }
 })
